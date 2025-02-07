@@ -97,7 +97,7 @@ const App = () => {
                 { trendingMovies.length > 0 && (
                     <section className="trending">
                         <h2>Trending movies</h2>
-                        { trendingErrorMessage ? (
+                        { trendingErrorMessage != '' ? (
                             <ul>
                                 {trendingMovies.map((movie, index) => (
                                     <li key={movie.$id}>
